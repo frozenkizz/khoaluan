@@ -13,8 +13,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.kopiko.converter.AccountAuthConverter;
-import com.kopiko.dto.AccountAuth;
 import com.kopiko.entity.Account;
 import com.kopiko.service.IAccountService;
 

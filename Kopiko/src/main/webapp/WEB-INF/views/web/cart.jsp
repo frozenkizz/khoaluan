@@ -21,7 +21,8 @@ body {
 <section id="view">
 
 	<div class="container">
-		<h3 class="ml-4">Giỏ Hàng</h3>
+		<div class="nocart-wrap">
+			<h3 class="ml-4">Giỏ Hàng</h3>
 		<div class="row mt-4">
 			<c:choose>
 				<c:when test="${sessionScope.myCartNum == 0}">
@@ -157,6 +158,8 @@ body {
 				</c:otherwise>
 			</c:choose>
 		</div>
+		</div>
+		
 
 	</div>
 </section>

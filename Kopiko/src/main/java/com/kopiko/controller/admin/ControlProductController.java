@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.kopiko.converter.ProductConverter;
 import com.kopiko.converter.ProductImageConverter;
 import com.kopiko.dto.ProductImageDTO;
 import com.kopiko.entity.Product;

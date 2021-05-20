@@ -12,18 +12,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.kopiko.common.constant.Constants;
 import com.kopiko.converter.AccountCustomerConverter;
 import com.kopiko.converter.ProductShowListConverter;
-import com.kopiko.dto.AccountCustomerDTO;
 import com.kopiko.entity.Account;
 import com.kopiko.entity.OrderDetailEntity;
 import com.kopiko.entity.OrderEntity;
-import com.kopiko.entity.OrderStatusEntity;
 import com.kopiko.entity.PaymentMethodEntity;
 import com.kopiko.entity.ProductDetail;
 import com.kopiko.model.Cart;
@@ -32,7 +29,6 @@ import com.kopiko.service.IOrderDetailService;
 import com.kopiko.service.IOrderService;
 import com.kopiko.service.IPaymentMethodService;
 import com.kopiko.service.IProductDetailService;
-import com.kopiko.service.IProductService;
 
 /**
  * @author rianta9

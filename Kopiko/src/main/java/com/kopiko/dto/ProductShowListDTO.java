@@ -5,6 +5,8 @@ package com.kopiko.dto;
 
 import java.math.BigDecimal;
 
+import com.kopiko.util.MoneyHelper;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -29,5 +31,13 @@ public class ProductShowListDTO {
 	
 	public Long getLongSalePrice() {
 		return salePrice.longValue();
+	}
+	
+	public String getStringPrice() {
+		return MoneyHelper.toMoneyType(getLongPrice());
+	}
+	
+	public String getStringSalePrice() {
+		return MoneyHelper.toMoneyType(getLongSalePrice());
 	}
 }

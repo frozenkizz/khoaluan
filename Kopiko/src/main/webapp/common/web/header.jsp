@@ -92,8 +92,12 @@
 						<li class="nav__mobile-list-item">
 							<div class="header__search header__search-mobile">
 								<div class="header__search-input-wrap">
-									<input type="text" class="header__search-input"
-										placeholder="Tìm kiếm sản phẩm">
+									<form action="/search" method="GET">
+										<input type="text" class="header__search-input"
+										placeholder="Tìm kiếm sản phẩm" name="keyword" required="required">
+										<input type="submit" value="Search">
+									</form>
+									
 								</div>
 								<button class="header__search-btn">
 									<i class="header__search-btn-icon fas fa-search"></i>
@@ -107,10 +111,10 @@
 						<li class="nav__mobile-list-item"><a href="/search/sale"
 							class="nav__mobile-link">SALE</a></li>
 						<li class="nav__mobile-list-item"><a
-							href="/search/thoi-trang-nam" class="nav__mobile-link">THỜI
+							href="/search/category" class="nav__mobile-link">THỜI
 								TRANG NAM</a></li>
 						<li class="nav__mobile-list-item"><a
-							href="/search/thoi-trang-nu" class="nav__mobile-link">THỜI
+							href="/search/category" class="nav__mobile-link">THỜI
 								TRANG NỮ</a></li>
 					</ul>
 				</nav>
@@ -121,15 +125,18 @@
 				<a href="/home"><img src="/img/KopiKo.png" alt="Logo"
 					class="header__logo-img"></a>
 			</div>
-
+			<!-- Main Search -->
 			<div class="header__search">
+			<form action="/search" method="GET" class="header__search-form">
 				<div class="header__search-input-wrap">
-					<input type="text" class="header__search-input"
-						placeholder="Tìm kiếm sản phẩm">
+					
+										<input type="text" class="header__search-input"
+										placeholder="Tìm kiếm sản phẩm" name="keyword" required="required">	
 				</div>
-				<button class="header__search-btn">
+				<button class="header__search-btn" type="submit">
 					<i class="header__search-btn-icon fas fa-search"></i>
 				</button>
+				</form>
 			</div>
 
 			<!-- Cart -->
@@ -194,7 +201,7 @@
 					<li class="header__navbar-items"><a
 						class="header__navbar-items-link" href="/search/sale">SALE</a></li>
 					<li class="header__navbar-items"><a
-						class="header__navbar-items-link" href="/search/thoi-trang-nam">THỜI
+						class="header__navbar-items-link" href="/search/category">THỜI
 							TRANG NAM</a>
 						<div class="header__navbar-detail">
 							<ul class="header__navbar-detail-list">
@@ -209,7 +216,7 @@
 							</ul>
 						</div></li>
 					<li class="header__navbar-items"><a
-						class="header__navbar-items-link" href="/search/thoi-trang-nu">THỜI
+						class="header__navbar-items-link" href="/search/category">THỜI
 							TRANG NỮ</a>
 						<div class="header__navbar-detail">
 							<ul class="header__navbar-detail-list">

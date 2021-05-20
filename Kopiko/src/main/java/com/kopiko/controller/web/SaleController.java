@@ -42,6 +42,17 @@ public class SaleController {
 		}
 		return listResult;
 	}
+	
+	
+	/*
+	 * @GetMapping("/") public List<ProductShowListDTO> getListProductByName(String
+	 * keyword) { List<Product> listProduct =
+	 * productService.findAllProductByName(keyword); List<ProductShowListDTO>
+	 * listResult = new ArrayList<ProductShowListDTO>(); for (Product product :
+	 * listProduct) { listResult.add(converter.toDTO(product)); } return listResult;
+	 * }
+	 */
+	 
 
 	/*
 	 * @RequestMapping(value = "/searchPrice", method = RequestMethod.POST) public

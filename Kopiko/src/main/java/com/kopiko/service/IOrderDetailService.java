@@ -9,7 +9,6 @@ package com.kopiko.service;
 import java.util.List;
 
 import com.kopiko.entity.OrderDetailEntity;
-import com.kopiko.entity.OrderEntity;
 
 public interface IOrderDetailService {
 

@@ -8,10 +8,7 @@ package com.kopiko.entity;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.Locale;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

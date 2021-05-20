@@ -14,8 +14,6 @@ import com.kopiko.entity.Account;
 import com.kopiko.service.IBrandService;
 import com.kopiko.service.ICategoryService;
 
-import lombok.extern.apachecommons.CommonsLog;
-
 /**
  * @author rianta9
  * @datecreated 26 thg 3, 2021 16:10:31

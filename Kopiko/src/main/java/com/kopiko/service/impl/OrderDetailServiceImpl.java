@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kopiko.entity.OrderDetailEntity;
-import com.kopiko.entity.OrderEntity;
 import com.kopiko.repository.IOrderDetailRepository;
 import com.kopiko.service.IOrderDetailService;
 

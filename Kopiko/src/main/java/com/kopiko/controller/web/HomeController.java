@@ -1,28 +1,29 @@
 package com.kopiko.controller.web;
 
- import java.text.DateFormat;
+ import java.math.BigDecimal;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
- import java.math.BigDecimal;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.kopiko.entity.Product;
-import com.kopiko.service.ICategoryService;
-import com.kopiko.service.impl.BrandService;
-import com.kopiko.service.impl.ProductService;
-
 import com.kopiko.converter.ProductShowListConverter;
 import com.kopiko.entity.Product;
 import com.kopiko.model.ITop12ProductSelling;
+import com.kopiko.service.ICategoryService;
+import com.kopiko.service.impl.BrandService;
 import com.kopiko.service.impl.ProductService;
 import com.kopiko.util.DateTimeUtil;
 
@@ -71,23 +72,31 @@ public class HomeController {
 		return "web/home";
 	}
 	
-	@RequestMapping(value = {"search"})
-	public String searchPage() {
-		return "web/search";
+	@RequestMapping(value = {"/search"})
+	public String searchPage(Model model, @RequestParam String keyword) {
+		System.out.println("Keyword:" + keyword);
+		model.addAttribute("listcategory", categoryService.findAll());
+		model.addAttribute("listBrand", brandService.findAll());
+		if(keyword == null) keyword = ""; // Tìm tất cả
+		List<Product> listProduct = productService.findAllProductByName(keyword); 
+		System.out.println("Sl ket quả: " + listProduct.size());
+		model.addAttribute("listProduct", listProduct);
+		model.addAttribute("keyword", keyword);
+		return "web/searchProduct";
 	}
 	
-//	@RequestMapping(value = {"search/sale"})
+//	@RequestMapping(value = {"/search/sale"})
 //	public String searchSalePage() {
 //		return "web/search-sale";
 //	}
 	
-	@RequestMapping(value = {"search/sale"}) 
+	@RequestMapping(value = {"/search/sale"}) 
 	public String searchSalePage(Model model) {
 		model.addAttribute("listcategory", categoryService.findAll());
 		model.addAttribute("listBrand", brandService.findAll());
 		return "web/search-sale"; }
 	
-	@RequestMapping(value = {"checkout/zalopay"}) 
+	@RequestMapping(value = {"/checkout/cart/zalopay"}) 
 	public String zaloPayPage(Model model) {
 //		model.addAttribute("listcategory", categoryService.findAll());
 //		model.addAttribute("listBrand", brandService.findAll());

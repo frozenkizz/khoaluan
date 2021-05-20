@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.kopiko.entity.Comment;
 import com.kopiko.entity.CommentImage;
 
 /**

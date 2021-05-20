@@ -14,7 +14,7 @@
 					<li class="nav-item link-menu-name"><a href="/home"
 						class=" link-page-name">TRANG CHỦ <span> / </span></a></li>
 					<li class="nav-item link-menu-name"><a href="#"
-						class=" text-dark">DANH MỤC SẢN PHẨM</a></li>
+						class=" text-dark">TÌM KIẾM SẢN PHẨM</a></li>
 				</ul>
 			</div>
 		</div>

@@ -4,8 +4,6 @@
 package com.kopiko.dto;
 
 import java.sql.Date;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 import com.kopiko.util.DateTimeUtil;
 

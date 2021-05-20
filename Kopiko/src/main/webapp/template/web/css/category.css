@@ -48,7 +48,7 @@ a {
     margin-bottom: 5px;
     padding-bottom: 10px;
     border-radius: 5px;
-    /* border: 1px solid var(--border-color); */
+    border: 1px solid var(--border-color);
 }
 
 .category-box:hover {
@@ -93,8 +93,11 @@ a {
     font-size: 16px;
 }
 .img-responsive {
-	width: 200px;
+	/* width: 200px; */
     height: 230px;
+}
+
+.category-wrap {
 }
 
 .vnd {

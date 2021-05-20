@@ -21,7 +21,6 @@ import com.kopiko.model.PageModel;
 import com.kopiko.model.ResponseModel;
 import com.kopiko.repository.IProductRepository;
 import com.kopiko.service.IProductService;
-import com.kopiko.model.Top12ProductSelling;
 import com.kopiko.statistic.IProductStatistic;
 
 @Service
@@ -35,6 +34,14 @@ public class ProductService implements IProductService{
 	@Override
 	public List<Product> findAll() {
 		return productRepository.findAll();
+	}
+	
+	@Override
+	public List<Product> findAllProductByName(String keyword) {
+		if(keyword == null || keyword.isEmpty()) {
+			return productRepository.findAll();
+		}
+		return productRepository.findAllByProductNameContaining(keyword);
 	}
 
 	@Override

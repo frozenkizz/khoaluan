@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.kopiko.entity.Product;
 import com.kopiko.model.ITop12ProductSelling;
 import com.kopiko.model.ResponseModel;
-import com.kopiko.model.Top12ProductSelling;
 import com.kopiko.statistic.IProductStatistic;
 
 @Service
@@ -26,7 +25,7 @@ public interface IProductService {
 	List<Product> findByProductSale();
 	List<Product> findAllBySalePrice(BigDecimal minPrice, BigDecimal maxPrice);
 	
-	// Search product category id! trungns4
+	// Search product category id!
 	List<Product> searchProductByCategoryId(Long id);
 	
 	// search product of category id of product id
@@ -57,4 +56,5 @@ public interface IProductService {
 	 * @return
 	 */
 	List<IProductStatistic> getTop10SellingByMonthAndYear(Integer month, Integer year);
+	List<Product> findAllProductByName(String keyword);
 }

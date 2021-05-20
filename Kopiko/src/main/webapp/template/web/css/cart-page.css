@@ -193,6 +193,10 @@ p{
 	max-width: 96%;
 }
 
+.nocart-wrap {
+	height: 700px;
+}
+
 
 .payment-cart{
 	margin-bottom: 10px;

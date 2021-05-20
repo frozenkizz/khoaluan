@@ -22,13 +22,13 @@
 					<p>Cùng với sự phát triển không ngừng của thời trang thế giới,
 						rất nhiều thương hiệu cho ra đời những mẫu áo quần nữ chính hãng
 						đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
-					<a class="btn__look-product-hover" href="#"> <span>Xem
+					<a class="btn__look-product-hover" href="search/category"> <span>Xem
 							sản phẩm</span>
 					</a>
 				</div>
 			</div>
 			<div class="carousel-item active">
-				<img src="/img/slider-1.jpg" class="d-block carousel-item-img w-100"
+				<img src="/img/men.png" class="d-block carousel-item-img w-100"
 					alt="...">
 				<div class="carousel-caption carousel-caption-2 d-none d-md-block  ">
 					<h3>Kopiko</h3>
@@ -36,7 +36,7 @@
 					<p>Cùng với sự phát triển không ngừng của thời trang thế giới,
 						rất nhiều thương hiệu cho ra đời những mẫu áo quần nam chính hãng
 						đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
-					<a class="btn__look-product-hover" href="#"> <span>Xem
+					<a class="btn__look-product-hover" href="search/category"> <span>Xem
 							sản phẩm</span>
 					</a>
 				</div>
@@ -50,7 +50,7 @@
 					<p>Cùng với sự phát triển không ngừng của thời trang thế giới,
 						rất nhiều thương hiệu cho ra đời những mẫu áo quần chính hãng
 						đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
-					<a class="btn__look-product-hover" href="#"> <span>Xem
+					<a class="btn__look-product-hover" href="search/category"> <span>Xem
 							sản phẩm</span>
 					</a>
 				</div>
@@ -181,8 +181,8 @@
 										<h3>${listSelling.get(i).getProductName() }</h3>
 										<div
 											class="card-text text-left font-weight-bold d-flex justify-content-center">
-											<span class="product__price product__price-old">${listSelling.get(i).getLongPrice() }đ</span>
-											<span class="product__price product__price-new">${listSelling.get(i).getLongSalePrice() }đ</span>
+											<span class="product__price product__price-old">${listSelling.get(i).getLongPrice() }</span>
+											<span class="product__price product__price-new">${listSelling.get(i).getLongSalePrice() }</span>
 										</div>
 										<a href="/product/${listSelling.get(i).getProductId() }"
 											class="btn  margin__btn-add-cart">Xem sản phẩm</a>
@@ -206,8 +206,8 @@
 										<h3>${listSelling.get(i).getProductName() }</h3>
 										<div
 											class="card-text text-left font-weight-bold d-flex justify-content-center">
-											<span class="product__price product__price-old">${listSelling.get(i).getLongPrice() }đ</span>
-											<span class="product__price product__price-new">${listSelling.get(i).getLongSalePrice() }đ</span>
+											<span class="product__price product__price-old">${listSelling.get(i).getStringPrice() }</span>
+											<span class="product__price product__price-new">${listSelling.get(i).getStringSalePrice() }</span>
 										</div>
 										<a href="/product/${listSelling.get(i).getProductId() }"
 											class="btn  margin__btn-add-cart">Xem sản phẩm</a>
@@ -310,8 +310,8 @@
 									<h3>${listSelling.getProductName() }</h3>
 									<div
 										class="card-text text-left font-weight-bold d-flex justify-content-center">
-										<span class="product__price product__price-old">${listSelling.getLongPrice() }đ</span>
-										<span class="product__price product__price-new">${listSelling.getLongSalePrice()}đ</span>
+										<span class="product__price product__price-old">${listSelling.getStringPrice() }</span>
+										<span class="product__price product__price-new">${listSelling.getStringSalePrice()}</span>
 									</div>
 									<a href="/product/${listSelling.getProductId() }"
 										class="btn  margin__btn-add-cart">Xem sản phẩm</a>
@@ -334,8 +334,8 @@
 									<h3>${promotionalProducts.getProductName() }</h3>
 									<div
 										class="card-text text-left font-weight-bold d-flex justify-content-center">
-										<span class="product__price product__price-old">${promotionalProducts.getLongPrice() }đdđ</span>
-										<span class="product__price product__price-new">${promotionalProducts.getLongSalePrice()}đ</span>
+										<span class="product__price product__price-old">${promotionalProducts.getStringPrice() }</span>
+										<span class="product__price product__price-new">${promotionalProducts.getStringSalePrice()}</span>
 									</div>
 									 <a href="/product/${promotionalProducts.getProductId() }"
 										class="btn  margin__btn-add-cart">Xem sản phẩm</a> 
@@ -358,8 +358,8 @@
 									<h3>${listNewProduct.getProductName() }</h3>
 									<div
 										class="card-text text-left font-weight-bold d-flex justify-content-center">
-										<span class="product__price product__price-old">${listNewProduct.getLongPrice() }đdđ</span>
-										<span class="product__price product__price-new">${listNewProduct.getLongSalePrice()}đ</span>
+										<span class="product__price product__price-old">${listNewProduct.getStringPrice() }</span>
+										<span class="product__price product__price-new">${listNewProduct.getStringSalePrice()}</span>
 									</div>
 									<a href="/product/${listNewProduct.getProductId() }"
 										class="btn  margin__btn-add-cart">Xem sản phẩm</a>

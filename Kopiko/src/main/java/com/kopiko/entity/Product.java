@@ -2,7 +2,6 @@ package com.kopiko.entity;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -19,8 +18,8 @@ import javax.persistence.Table;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.kopiko.util.DateTimeUtil;
+import com.kopiko.util.MoneyHelper;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -88,5 +87,13 @@ public class Product {
 	
 	public String getDateCreatedString() {
 		return DateTimeUtil.toStringType(dateCreated);
+	}
+	
+	public String getStringSalePrice() {
+		return MoneyHelper.toMoneyType(getSalePrice());
+	}
+	
+	public String getStringPrice() {
+		return MoneyHelper.toMoneyType(getPrice());
 	}
 }

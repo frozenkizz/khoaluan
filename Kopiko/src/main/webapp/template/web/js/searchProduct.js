@@ -4,14 +4,14 @@ $(document).ready(function() {
 		productName : $().val()
 	};
 	$.ajax({
-		url: '/api/v1/search/sale',
+		url: '/api/v1/search/',
 		type: 'GET',
 		data : dataSend,
 		dataType: 'json',
 		success: function(data) {
 			var result = "";
 			console.log(data);
-			$('#productSale').empty();
+			$('#searchProduct').empty();
 			data.forEach(item => {
 				console.log(item.productName)
 				result = `
@@ -29,7 +29,7 @@ $(document).ready(function() {
 						</div>
 					</div>
 					`;
-					$('#productSale').append(result);
+					$('#searchProduct').append(result);
 			});
 		}
 	})
