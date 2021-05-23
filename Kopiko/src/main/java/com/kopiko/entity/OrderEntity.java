@@ -8,10 +8,12 @@ package com.kopiko.entity;
 
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -31,7 +33,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "[order]")
 @Data
-@NoArgsConstructor
 public class OrderEntity {
 
 	@Id
@@ -63,17 +64,26 @@ public class OrderEntity {
 
 	@OneToMany(mappedBy = "order")
 	private List<OrderDetailEntity> listOrderDetail;
+	
+	public OrderEntity() {
+		listOrderDetail = new ArrayList<OrderDetailEntity>();
+	}
 
 	public Long getTotalPrice() {
 		Long result = 0l;
 		
+		// List dang rong
+		if(listOrderDetail.size() == 0) System.out.println("DS Sp rong!");
 		for (OrderDetailEntity orderDetail : listOrderDetail) {
 			if(orderDetail != null && orderDetail.getSalePrice() != null && orderDetail.getQuantity() != null) {
 				result += orderDetail.getSalePrice().longValue()*orderDetail.getQuantity();
+				System.out.println("Sl sp:" + orderDetail.getQuantity());
 			}
+			else System.out.println("Co loi du lieu!");
 		}
 		
 		if(shippingFee != null) result += shippingFee.longValue();
+		System.out.println("Tong tien hoa don: " + result);
 		return result;
 	}
 	

@@ -24,8 +24,7 @@ import com.kopiko.service.IAccountService;
 import com.kopiko.service.IOrderService;
 
 /**
- * @author rianta9
- * @datecreated 16 thg 3, 2021 11:23:15 Quản lý các order của mỗi người dùng
+ *  Quản lý các order của mỗi người dùng
  */
 
 @Controller

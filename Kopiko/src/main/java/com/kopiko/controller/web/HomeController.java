@@ -116,5 +116,11 @@ public class HomeController {
 		return "web/search-sale";
 	}
 	
+	@RequestMapping(value = {"/checkout/payment/result"}) 
+	public String PaymentResult(Model model) {
+		/* return "web/payment-result"; */
+		return "web/home";
+	}
+	
 
 }

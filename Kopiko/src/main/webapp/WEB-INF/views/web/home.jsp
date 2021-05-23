@@ -156,8 +156,8 @@
 										<h3>${listSelling.get(i).getProductName() }</h3>
 										<div
 											class="card-text text-left font-weight-bold d-flex justify-content-center">
-											<span class="product__price product__price-old">${listSelling.get(i).getLongPrice() }đ</span>
-											<span class="product__price product__price-new">${listSelling.get(i).getLongSalePrice() }đ</span>
+											<span class="product__price product__price-old">${listSelling.get(i).getStringPrice() }</span>
+											<span class="product__price product__price-new">${listSelling.get(i).getStringSalePrice() }</span>
 										</div>
 										<a href="/product/${listSelling.get(i).getProductId() }"
 											class="btn  margin__btn-add-cart">Xem sản phẩm</a>
@@ -181,8 +181,8 @@
 										<h3>${listSelling.get(i).getProductName() }</h3>
 										<div
 											class="card-text text-left font-weight-bold d-flex justify-content-center">
-											<span class="product__price product__price-old">${listSelling.get(i).getLongPrice() }</span>
-											<span class="product__price product__price-new">${listSelling.get(i).getLongSalePrice() }</span>
+											<span class="product__price product__price-old">${listSelling.get(i).getStringPrice() }</span>
+											<span class="product__price product__price-new">${listSelling.get(i).getStringSalePrice() }</span>
 										</div>
 										<a href="/product/${listSelling.get(i).getProductId() }"
 											class="btn  margin__btn-add-cart">Xem sản phẩm</a>
@@ -380,13 +380,12 @@
 		<div class="col-md-4  col-sm-6 h-100">
 			<div class="card border-0">
 				<div class="card-block">
-					<img src="/img/girl.png" class="img-fluid carousel-item-img"
+					<img src="/img/men.png" class="img-fluid carousel-item-img"
 						alt="" srcset="">
 					<div class="card-title text-left ml-2  ">
-						<h3 class="mt-3">Áo quần dành cho học sinh và tuổi teen -
+						<h3 class="mt-3">Áo quần dành cho cánh đàn ông -
 							phong cách mới</h3>
-						<h4 class="mt-4 text-dark">Đối với một số doanh nhân, một
-							chiếc đồng hồ đeo tay không chỉ là ...</h4>
+						<h4 class="mt-4 text-dark">Xu hướng thời trang nam hiện nay? Những mẫu mã mới, phong cách mới ...</h4>
 					</div>
 				</div>
 			</div>
@@ -394,13 +393,12 @@
 		<div class="col-md-4  col-sm-6">
 			<div class="card border-0 ">
 				<div class="card-block">
-					<img src="/img/men.png" class="img-fluid carousel-item-img"
+					<img src="/img/girl.png" class="img-fluid carousel-item-img"
 						alt="">
 					<div class="card-title  text-left ml-2  ">
-						<h3 class="mt-3">Áo quần dành cho học sinh và tuổi teen -
+						<h3 class="mt-3">Áo quần dành cho nữ giới -
 							phong cách mới</h3>
-						<h4 class="mt-4 text-dark">Đối với một số học sinh, một chiếc
-							đồng hồ đeo tay không chỉ là ...</h4>
+						<h4 class="mt-4 text-dark">Sành điệu, phong cách mới, giúp người phụ nữ tự tin hơn bao giờ hết...</h4>
 					</div>
 				</div>
 			</div>
@@ -411,10 +409,9 @@
 					<img src="/img/boy.png" class="img-fluid carousel-item-img"
 						alt="">
 					<div class="card-title  text-left ml-2  ">
-						<h3 class="mt-3">Áo quần dành cho học sinh và tuổi teen -
+						<h3 class="mt-3">Áo sơ mi nam -
 							phong cách mới</h3>
-						<h4 class="mt-4 text-dark">Đối với một số doanh nhân, một
-							chiếc đồng hồ đeo tay không chỉ là ...</h4>
+						<h4 class="mt-4 text-dark">Thiết kế thoải mái, mát mẻ lại còn hợp xu hướng thời trang hiện đại...</h4>
 					</div>
 				</div>
 			</div>

@@ -59,7 +59,7 @@ body {
 												</form>
 
 
-												<p>Đơn giá: ${map.value.product.getSalePrice() } đ</p>
+												<p>Đơn giá: ${map.value.product.getStringSalePrice() }</p>
 
 											</div>
 
@@ -130,12 +130,12 @@ body {
 											đ</span>
 									</h5>
 									<h5 style="padding: 5px 40px">
-										Phí vận chuyển: <span style="float: right">50.000 đ</span>
+										Phí vận chuyển: <span style="float: right">Free ship</span>
 									</h5>
 								</c:if>
 
 								<h5 style="padding: 5px 40px 20px 40px">
-									Tổng tiền: <span style="float: right">${sessionScope.myCartTotal + 50000}
+									Tổng tiền: <span style="float: right">${sessionScope.myCartTotal + 0}
 										đ</span>
 								</h5>
 

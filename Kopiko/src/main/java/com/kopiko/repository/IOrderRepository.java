@@ -60,4 +60,6 @@ public interface IOrderRepository  extends JpaRepository<OrderEntity, Long>{
 			+ "	group by MONTH(o.date_created)\r\n"
 			+ ") as o on m.month = o.month", nativeQuery = true)
 	List<IRevenueStatistic> getListRevenueOfOrderByYear(Integer year);
+
+	OrderEntity findByOrderId(Long id);
 }

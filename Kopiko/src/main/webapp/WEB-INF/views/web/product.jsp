@@ -88,8 +88,8 @@
 					</div>
 					<div class="row">
 						<p class="font-weight-bold float-left">
-							<span style="font-size: 32px;">${product.getLongSalePrice()}đ</span>
-							<span style="font-size: 12px; text-decoration: line-through;">${product.getLongPrice()}đ</span>
+							<span style="font-size: 32px;">${product.getStringSalePrice()}</span>
+							<span style="font-size: 12px; text-decoration: line-through;">${product.getStringPrice()}</span>
 						</p>
 					</div>
 					<div class="row">

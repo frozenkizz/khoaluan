@@ -40,6 +40,11 @@ public class Constants {
 		public static final Integer BANDED_STATUS = 1;
 	}
 	
+	public static class PaymentMethod{
+		public static final Long CASH_ON_DELIVERY = 1l;
+		public static final Long ONLINE_PAYMENT = 2l;
+	}
+	
 	public static class OrderStatus{
 		public static final Long WAITING_CONFIRM_STATUS = 1l;
 		public static final Long CONFIRMED_STATUS = 2l;

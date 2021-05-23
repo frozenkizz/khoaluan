@@ -22,8 +22,8 @@ $(document).ready(function() {
 							<p class="category-name">${item.productName}</p>
 							<div
 								class="card-text text-left font-weight-bold d-flex justify-content-center">
-								<span class="product__price product__price-old">${item.price}đ</span>
-								<span class="product__price product__price-new">${item.salePrice}đ</span>
+								<span class="product__price product__price-old">${currencyFormat(item.price)}đ</span> 
+								<span class="product__price product__price-new">${currencyFormat(item.salePrice)}đ</span>
 							</div>
 							<a href="/product/${ item.productId }" class="btn  margin__btn-add-cart m-auto">Xem sản phẩm</a>
 						</div>
@@ -33,6 +33,10 @@ $(document).ready(function() {
 			});
 		}
 	})
+	
+	function currencyFormat(price) {
+	return price.toLocaleString('vi-VN', { useGrouping: true });
+}
  
  
 	/*//var dataSend = JSON.stringify({ productName : 123});

@@ -52,7 +52,7 @@ public class OrderServiceImpl implements IOrderService {
 	@Override
 	public OrderEntity findByOrderId(Long id) {
 		// TODO Auto-generated method stub
-		return orderRepository.getOne(id);
+		return orderRepository.findByOrderId(id);
 	}
 
 

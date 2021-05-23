@@ -14,11 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.kopiko.entity.Product;
 import com.kopiko.service.IProductService;
 
-/**
- * @author rianta9
- * @datecreated 16 thg 3, 2021 11:21:11
- * Xem thông tin sản phẩm
- */
 
 @Controller
 public class ProductController {
