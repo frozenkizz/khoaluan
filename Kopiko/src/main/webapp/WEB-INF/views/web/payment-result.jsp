@@ -37,31 +37,31 @@
 				<tbody>
 					<tr>
 						<td>Mã giao dịch</td>
-						<td><label>${vnp_TransactionNo}</label></td>
+						<td><label>${Invoice.vnp_TransactionNo}</label></td>
 					</tr>
 					<tr>
 						<td>Đơn đặt hàng</td>
-						<td><a href="/order-detail/${vnp_TxnRef}">${vnp_TxnRef}</a></td>
+						<td><a href="/order-detail/${Invoice.vnp_TxnRef}">${invoice.vnp_TxnRef}</a></td>
 					</tr>
 					<tr>
 						<td>Số tiền</td>
-						<td><label>${vnp_Amount}</label></td>
+						<td><label>${Invoice.vnp_Amount}</label></td>
 					</tr>
 					<tr>
 						<td>Nội dung thanh toán</td>
-						<td><label>${vnp_OrderInfo}</label></td>
+						<td><label>${Invoice.vnp_OrderInfo}</label></td>
 					</tr>
 					<tr>
 						<td>Mã GD Tại VNPAY</td>
-						<td><label>${vnp_TransactionNo}</label></td>
+						<td><label>${Invoice.vnp_TransactionNo}</label></td>
 					</tr>
 					<tr>
 						<td>Mã Ngân hàng</td>
-						<td><label>${vnp_BankCode}</label></td>
+						<td><label>${Invoice.vnp_BankCode}</label></td>
 					</tr>
 					<tr>
 						<td>Kết quả</td>
-						<td><label>${result}</label></td>
+						<td><label>${Invoice.result}</label></td>
 					</tr>
 
 				</tbody>
